@@ -8,10 +8,15 @@
         "name": "jsonchou",
         "url": "https://github.com/jsonchou"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jsonchou/cssCompact.git"
+    },
     "bugs": {
         "url": "https://github.com/jsonchou/css-compact/issues",
         "email": "jsonchou@outlook.com"
     },
+    "icon": "name.jpg",
     "engines": {
         "vscode": "^1.12.0"
     },
