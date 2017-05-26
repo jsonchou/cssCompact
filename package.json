@@ -1,0 +1,60 @@
+{
+    "name": "css-compact",
+    "displayName": "css-compact",
+    "description": "back to original way",
+    "version": "0.0.1",
+    "publisher": "jsonchou",
+    "author": {
+        "name": "jsonchou",
+        "url": "https://github.com/jsonchou"
+    },
+    "bugs": {
+        "url": "https://github.com/jsonchou/css-compact/issues",
+        "email": "jsonchou@outlook.com"
+    },
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.cssCompact",
+        "onLanguage:css"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "css compact",
+            "properties": {
+                "cssCompact.Author": {
+                    "type": "string",
+                    "default": "jsonchou",
+                    "description": "author description"
+                }
+            }
+        },
+        "keybindings": [{
+            "command": "extension.cssCompact",
+            "key": "shift+alt+f",
+            "when": "editorTextFocus"
+        }],
+        "commands": [{
+            "command": "extension.cssCompact",
+            "title": "cssCompact"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
