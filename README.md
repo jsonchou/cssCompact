@@ -1,4 +1,4 @@
-# css-compact README
+# css-compact vscode plugin
 
 let's go back to original way to write our css
 
@@ -10,7 +10,7 @@ let's go back to original way to write our css
 
 * remove tab、\r\n(check os)
 
-* keep custome empty row
+* keep custom blank lines
 
 ## Examples
 
