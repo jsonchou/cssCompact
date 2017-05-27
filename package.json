@@ -2,7 +2,7 @@
     "name": "css-compact",
     "displayName": "css-compact",
     "description": "let's go back to original way to write our css",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "jsonchou",
     "Keywords":"css compact,format css,single line,single row",
     "author": {
@@ -44,7 +44,7 @@
         "keybindings": [{
             "command": "extension.cssCompact",
             "key": "shift+alt+f",
-            "when": "editorTextFocus"
+            "when": "editorTextFocus && editorLangId == css"
         }],
         "commands": [{
             "command": "extension.cssCompact",

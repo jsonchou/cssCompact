@@ -93,6 +93,10 @@ Output:
 Init package
 
 
+### 0.0.3
+
+Fix shortcut key collision with **shift+alt+f**
+
 ### 0.0.2
 
 Fix package.json description & version
