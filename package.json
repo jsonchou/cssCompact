@@ -44,7 +44,7 @@
         "keybindings": [{
             "command": "extension.cssCompact",
             "key": "shift+alt+f",
-            "when": "editorTextFocus && editorLangId == css"
+            "when": "editorTextFocus && editorLangId == 'css'"
         }],
         "commands": [{
             "command": "extension.cssCompact",

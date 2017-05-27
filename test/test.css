@@ -12,4 +12,4 @@
 .model-b-list{margin-right:10px;}
 
 
-.test {font-size: 3.2rem;position: fixed;z-index: -1;top: 45%;left: 50%;display: none;visibility: hidden;overflow: auto;width: 70%;min-height: 2rem;-webkit-transition: all ease .5s;transition: all ease .5s;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: left;opacity: 0;border-radius: .8rem;background-color: rgba(255,255,255,1);}
+.test { font-size: 3.2rem;position: fixed;z-index: -1;top: 45%;left: 50%;display: none;visibility: hidden;overflow: auto;width: 70%;min-height: 2rem;-webkit-transition: all ease .5s;transition: all ease .5s;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: left;opacity: 0;border-radius: .8rem;background-color: rgba(255,255,255,1);}
