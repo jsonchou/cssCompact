@@ -90,12 +90,12 @@ Output:
 
 ## Release Notes
 
-init package
+Init package
 
 
 ### 0.0.2
 
-Fix package.json description & vertion
+Fix package.json description & version
 
 ### 0.0.1
 
