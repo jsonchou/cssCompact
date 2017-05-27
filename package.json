@@ -1,8 +1,8 @@
 {
     "name": "css-compact",
     "displayName": "css-compact",
-    "description": "back to original way",
-    "version": "0.0.1",
+    "description": "let's go back to original way to write our css",
+    "version": "0.0.2",
     "publisher": "jsonchou",
     "Keywords":"css compact,format css,single line,single row",
     "author": {

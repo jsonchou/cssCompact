@@ -92,7 +92,12 @@ Output:
 
 init package
 
-### 1.0.0
+
+### 0.0.2
+
+Fix package.json description & vertion
+
+### 0.0.1
 
 Initial release of cssCompact
 
@@ -101,6 +106,6 @@ Initial release of cssCompact
 
 ## Working with Markdown
 
-**Note:** Untest in Mac Environment
+**Note:** 
 
 **Enjoy!**
