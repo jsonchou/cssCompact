@@ -14,7 +14,7 @@ let's go back to original way to write our css
 
 ## Examples
 
-- common style formatter
+* **common style formatter**
 
 ~~~ css
 .btn {
@@ -41,7 +41,6 @@ let's go back to original way to write our css
 
 ~~~
 
-Output:
 ~~~ css
 .btn { border:1px solid black; background:#fff; border-radius:5px; color:#000;}
 
@@ -59,7 +58,7 @@ Output:
 ~~~
 
 
-- midea query(@media) formatter
+* **midea query(@media) formatter**
 
 ~~~ css
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -71,7 +70,7 @@ Output:
     }
 }
 ~~~
-Output:
+
 ~~~ css
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  .page-number { font-size: 12px; } 
@@ -79,7 +78,7 @@ Output:
  }
 ~~~
 
-- animation(@keyframes) formatter
+* **animation(@keyframes) formatter**
 
 ~~~ css
 @keyframes ani-rotate {
@@ -93,7 +92,7 @@ Output:
     }
 }
 ~~~
-Output:
+
 ~~~ css
 @keyframes ani-rotate { 
  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
@@ -105,6 +104,10 @@ Output:
 ## Release Notes
 
 Init package
+
+### 0.0.5
+
+Fix Markdown description
 
 ### 0.0.4
 
