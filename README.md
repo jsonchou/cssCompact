@@ -14,7 +14,7 @@ let's go back to original way to write our css
 
 ## Examples
 
-- demo1
+- common style formatter
 
 ~~~ css
 .btn {
@@ -58,33 +58,47 @@ Output:
 
 ~~~
 
-- demo2
+
+- midea query(@media) formatter
 
 ~~~ css
-.test {
-	font-size: 3.2rem;
-	position: fixed;
-	z-index: -1;
-	top: 45%;
-	left: 50%;
-	display: none;
-	visibility: hidden;
-	overflow: auto;
-	width: 70%;
-	min-height: 2rem;
-	-webkit-transition: all ease .5s;
-	transition: all ease .5s;
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	text-align: left;
-	opacity: 0;
-	border-radius: .8rem;
-	background-color: rgba(255,255,255,1);
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .page-number {
+        font-size: 12px;
+    }
+    .test {
+        margin-right: 100px;
+    }
 }
 ~~~
 Output:
 ~~~ css
-.test {font-size: 3.2rem;position: fixed;z-index: -1;top: 45%;left: 50%;display: none;visibility: hidden;overflow: auto;width: 70%;min-height: 2rem;-webkit-transition: all ease .5s;transition: all ease .5s;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: left;opacity: 0;border-radius: .8rem;background-color: rgba(255,255,255,1);}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ .page-number { font-size: 12px; } 
+ .test { margin-right: 100px; } 
+ }
+~~~
+
+- animation(@keyframes) formatter
+
+~~~ css
+@keyframes ani-rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+~~~
+Output:
+~~~ css
+@keyframes ani-rotate { 
+ from { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
+ to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+ }
 ~~~
 
 
@@ -92,6 +106,9 @@ Output:
 
 Init package
 
+### 0.0.4
+
+Fix animation(keyframes of from & to) & media query formatter
 
 ### 0.0.3
 
@@ -111,5 +128,6 @@ Initial release of cssCompact
 ## Working with Markdown
 
 **Note:** 
+there's a bug in animation percent style
 
 **Enjoy!**

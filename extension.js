@@ -26,17 +26,30 @@ var _unitEvt = function() {
     var content = doc.getText(range);
 
     var res = content
-        .replace(/\ +/g, ' ')//remove multi blank
-        .replace(/\t+/g, '')//remove tab(U+0009)
-        .replace(/\v+/g, '')//remove tab(U+000B)
 
-        // .replace(/;\n/g, ';')
-        // .replace(/{\n/g, '{')
-        // .replace(/\n{/g, '{')
-        
-        .replace(new RegExp(';' + os.EOL, 'g'), ';')
-        .replace(new RegExp('{' + os.EOL, 'g'), '{')
-        .replace(new RegExp(os.EOL + '}', 'g'), '}')
+        .replace(/\ +/g, ' ') //remove multi empty
+        .replace(/\{/g, ' { ') //"{" => " { "
+        .replace(/\}/g, ' } ') //"}  " => "} "
+        .replace(/\;/g, '; ') //";" => "; "
+        .replace(/\ +\;/g, ';') //" ;" => ";"
+        .replace(/\)\ +\{/g, ') {') //"){" => ") {"
+
+    .replace(/\ +/g, ' ') //remove multi empty
+        .replace(/\t+/g, '') //remove tab(U+0009)
+        .replace(/\v+/g, '') //remove tab(U+000B)
+
+    .replace(new RegExp('; ' + os.EOL, 'g'), ';')
+        .replace(new RegExp('{ ' + os.EOL, 'g'), '{')
+        .replace(new RegExp(os.EOL + ' } ', 'g'), '}')
+
+    .replace(/\{\ from\ \{/g, '{ ' + os.EOL + ' from {')
+        .replace(/\}\ to\ \{/g, '} ' + os.EOL + ' to {')
+
+    // fix animation & queryMedia style
+    .replace(new RegExp('} }', 'g'), '} ' + os.EOL + ' }')
+        .replace(/\)\ \{\ /g, ')' + os.EOL + ' { ' + os.EOL + ' ')
+        .replace(new RegExp(os.EOL + ' {', 'g'), os.EOL + ' {' + os.EOL)
+        .replace(new RegExp(os.EOL + ' {' + os.EOL + ' ' + os.EOL + ' ', 'g'), '{' + os.EOL + ' ')
 
     if (res) {
 
