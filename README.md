@@ -91,6 +91,18 @@ let's go back to original way to write our css
         transform: rotate(360deg);
     }
 }
+
+@keyframes ani-floweres-r {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
 ~~~
 
 ~~~ css
@@ -98,12 +110,22 @@ let's go back to original way to write our css
  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
  }
+
+@keyframes ani-floweres-r { 
+ 0% { transform: rotate(10deg); } 
+ 50% { transform: rotate(0deg); } 
+ 100% { transform: rotate(10deg); } 
+ }
 ~~~
 
 
 ## Release Notes
 
 Init package
+
+### 1.0.0
+
+Fix animation(keyframes of %)
 
 ### 0.0.5
 
@@ -131,6 +153,6 @@ Initial release of cssCompact
 ## Working with Markdown
 
 **Note:** 
-there's a bug in animation percent style
+
 
 **Enjoy!**
