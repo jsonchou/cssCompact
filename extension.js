@@ -42,7 +42,8 @@ var _unitEvt = function() {
         .replace(new RegExp('{ ' + os.EOL, 'g'), '{')
         .replace(new RegExp(os.EOL + ' } ', 'g'), '}')
 
-    .replace(/\{\ from\ \{/g, '{ ' + os.EOL + ' from {')
+    .replace(/\{\ 0%\ \{/g, '{ ' + os.EOL + ' 0% {')
+        .replace(/\{\ from\ \{/g, '{ ' + os.EOL + ' from {')
         .replace(/\}\ to\ \{/g, '} ' + os.EOL + ' to {')
 
     // fix animation & queryMedia style

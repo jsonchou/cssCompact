@@ -3,6 +3,7 @@
 .btn:hover,
 .btn:focus { background: #000; color: #fff; } 
 
+
 /*my empty row for comment*/
 
 .model-b { margin-right: 10px; } 
@@ -11,21 +12,26 @@
 
 .test { font-size: 3.2rem; position: fixed; z-index: -1; top: 45%; left: 50%; display: none; visibility: hidden; overflow: auto; width: 70%; min-height: 2rem; -webkit-transition: all ease .5s; transition: all ease .5s; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: left; opacity: 0; border-radius: .8rem; background-color: rgba(255, 255, 255, 1); } 
 
-@-webkit-keyframes ani-preloading { 0% { -webkit-transform: scale(0); transform: scale(0); } 
+@-webkit-keyframes ani-preloading { 
+ 0% { -webkit-transform: scale(0); transform: scale(0); } 
  100% { -webkit-transform: scale(1); transform: scale(1); } 
  }
 
-@keyframes ani-preloading { 0% { -webkit-transform: scale(0); transform: scale(0); } 
+@keyframes ani-preloading { 
+ 0% { -webkit-transform: scale(0); transform: scale(0); } 
  100% { -webkit-transform: scale(1); transform: scale(1); } 
  }
 
-@-webkit-keyframes ani-rotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
+@-webkit-keyframes ani-rotate { 
+ 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
  50% { -webkit-transform: rotate(360deg); transform: rotate(360deg); margin-right: 15px; } 
  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
  }
 
-@keyframes ani-rotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
- 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+@keyframes ani-floweres-r { 
+ 0% { transform: rotate(10deg); } 
+ 50% { transform: rotate(0deg); } 
+ 100% { transform: rotate(10deg); } 
  }
 
 @keyframes ani-rotate { 
