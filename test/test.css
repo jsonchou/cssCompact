@@ -3,7 +3,6 @@
 .btn:hover,
 .btn:focus { background: #000; color: #fff; } 
 
-
 /*my empty row for comment*/
 
 .model-b { margin-right: 10px; } 
@@ -21,6 +20,7 @@
  }
 
 @-webkit-keyframes ani-rotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 
+ 50% { -webkit-transform: rotate(360deg); transform: rotate(360deg); margin-right: 15px; } 
  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
  }
 
