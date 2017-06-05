@@ -2,7 +2,7 @@
     "name": "css-compact",
     "displayName": "css-compact",
     "description": "let's go back to original way to write our css",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "jsonchou",
     "Keywords":"css compact,format css,single line,single row",
     "author": {
@@ -14,7 +14,7 @@
         "url": "https://github.com/jsonchou/cssCompact.git"
     },
     "bugs": {
-        "url": "https://github.com/jsonchou/css-compact/issues",
+        "url": "https://github.com/jsonchou/cssCompact/issues",
         "email": "jsonchou@outlook.com"
     },
     "icon": "name.jpg",

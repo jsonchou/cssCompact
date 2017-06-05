@@ -29,31 +29,53 @@ let's go back to original way to write our css
   background:#000;
   color:#fff;
 }
+.base64 {
+    margin-right: 10px;
+    padding-top: 10px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUh);
+}
 
 
-
-//my empty row for comment
+/**my empty row for comment**/
 
 
 .model-b{margin-right:10px;}
 .model-b-list{margin-right:10px;}
 
 
+.test:nth-child(2n) {
+    margin-right: 10px;
+}
+
+.test:nth-child(2n+1) {
+    margin-right: 10px;
+}
+
+.test:nth-of-type(2n) {
+    margin-right: 10px;
+}
 ~~~
 
 ~~~ css
-.btn { border:1px solid black; background:#fff; border-radius:5px; color:#000;}
+.btn { border:1px solid black; background:#fff; border-radius:5px; color:#000; } 
 
 .btn:hover,
-.btn:focus { background:#000; color:#fff;}
+.btn:focus { background:#000; color:#fff; } 
+.base64 { margin-right: 10px; padding-top: 10px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUh); } 
 
 
+/**my empty row for comment**/
 
-//my empty row for comment
+
+.model-b { margin-right:10px; } 
+.model-b-list { margin-right:10px; } 
 
 
-.model-b{margin-right:10px;}
-.model-b-list{margin-right:10px;}
+.test:nth-child(2n) { margin-right: 10px; } 
+
+.test:nth-child(2n+1) { margin-right: 10px; } 
+
+.test:nth-of-type(2n) { margin-right: 10px; } 
 
 ~~~
 
@@ -122,6 +144,10 @@ let's go back to original way to write our css
 ## Release Notes
 
 Init package
+
+### 1.0.1
+
+Fix bugs(base64、nth-child、nth-of-type)
 
 ### 1.0.0
 

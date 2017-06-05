@@ -63,4 +63,38 @@
  .page-number { background: #ff0; } 
  }
 
+@media screen and (min-width: 768px){
+ #page-number { background: #ff0; } 
+ }
+
+@media screen and (min-width: 768px){
+ :root { font-size: 20px} 
+ }
+
 .text { margin-right: 10px; } 
+
+.test:nth-child(2n) { margin-right: 10px; } 
+
+.test:nth-child(2n+1) { margin-right: 10px; } 
+
+.test:nth-of-type(2n) { margin-right: 10px; } 
+
+.btn { border: 1px solid black; background: #fff; border-radius: 5px; color: #000; } 
+
+.btn:hover,
+.btn:focus { background: #000; color: #fff; } 
+
+.base64 { margin-right: 10px; padding-top: 10px; background-image: url(data:image/png;base64,iVBORw); } 
+
+
+/**my empty row for comment**/
+
+.model-b { margin-right: 10px; } 
+
+.model-b-list { margin-right: 10px; } 
+
+.test:nth-child(2n) { margin-right: 10px; } 
+
+.test:nth-child(2n+1) { margin-right: 10px; } 
+
+.test:nth-of-type(2n) { margin-right: 10px; } 

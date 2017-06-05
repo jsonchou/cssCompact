@@ -45,12 +45,20 @@ var _unitEvt = function() {
     .replace(/\{\ 0%\ \{/g, '{ ' + os.EOL + ' 0% {')
         .replace(/\{\ from\ \{/g, '{ ' + os.EOL + ' from {')
         .replace(/\}\ to\ \{/g, '} ' + os.EOL + ' to {')
+        .replace(new RegExp('; base64,', 'g'), ';base64,')
 
     // fix animation & queryMedia style
     .replace(new RegExp('} }', 'g'), '} ' + os.EOL + ' }')
-        .replace(/\)\ \{\ /g, ')' + os.EOL + ' { ' + os.EOL + ' ')
-        .replace(new RegExp(os.EOL + ' {', 'g'), os.EOL + ' {' + os.EOL)
+        .replace(/\)\ \{\ \./g, ')' + os.EOL + ' { ' + os.EOL + ' ' + '.')
+        .replace(/\)\ \{\ \#/g, ')' + os.EOL + ' { ' + os.EOL + ' ' + '#')
+        .replace(/\)\ \{\ \:/g, ')' + os.EOL + ' { ' + os.EOL + ' ' + ':')
+
+    .replace(new RegExp('}}', 'g'), '} ' + os.EOL + ' }')
+
+    .replace(new RegExp(os.EOL + ' {', 'g'), os.EOL + ' {' + os.EOL)
         .replace(new RegExp(os.EOL + ' {' + os.EOL + ' ' + os.EOL + ' ', 'g'), '{' + os.EOL + ' ')
+
+
 
     if (res) {
 
