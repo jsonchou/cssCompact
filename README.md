@@ -12,6 +12,8 @@ let's go back to original way to write our css
 
 * keep custom blank lines
 
+* **add wechat mini program wxss format**
+
 ## Examples
 
 * **common style formatter**
@@ -145,6 +147,10 @@ let's go back to original way to write our css
 
 Init package
 
+### 1.0.2
+
+Add feature(add wxss format)
+
 ### 1.0.1
 
 Fix bugs(base64、nth-child、nth-of-type)
@@ -180,5 +186,6 @@ Initial release of cssCompact
 
 **Note:** 
 
+if you can not format your **.css/.wxss** files, may be you can exchange LF with CRLF.
 
 **Enjoy!**
