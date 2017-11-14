@@ -16,7 +16,7 @@ var _unitEvt = function() {
         return;
     }
 
-    if (!doc || doc.languageId !== 'css') {
+    if (!doc || doc.languageId !== 'css' || doc.languageId !== 'wxss') {
         return;
     }
 
@@ -28,7 +28,10 @@ var _unitEvt = function() {
     var res = content
 
         .replace(/\ +/g, ' ') //remove multi empty
-        .replace(/\{/g, ' { ') //"{" => " { "
+        .replace(/\}/g, ';}')
+        .replace(/\;+/g, ';')
+
+    .replace(/\{/g, ' { ') //"{" => " { "
         .replace(/\}/g, ' } ') //"}  " => "} "
         .replace(/\;/g, '; ') //";" => "; "
         .replace(/\ +\;/g, ';') //" ;" => ";"
@@ -40,25 +43,26 @@ var _unitEvt = function() {
 
     .replace(new RegExp('; ' + os.EOL, 'g'), ';')
         .replace(new RegExp('{ ' + os.EOL, 'g'), '{')
-        .replace(new RegExp(os.EOL + ' } ', 'g'), '}')
+        .replace(new RegExp(os.EOL + '; }', 'g'), '; }')
 
+    // fix animation style
     .replace(/\{\ 0%\ \{/g, '{ ' + os.EOL + ' 0% {')
         .replace(/\{\ from\ \{/g, '{ ' + os.EOL + ' from {')
         .replace(/\}\ to\ \{/g, '} ' + os.EOL + ' to {')
         .replace(new RegExp('; base64,', 'g'), ';base64,')
 
-    // fix animation & queryMedia style
+    // fix queryMedia style
     .replace(new RegExp('} }', 'g'), '} ' + os.EOL + ' }')
         .replace(/\)\ \{\ \./g, ')' + os.EOL + ' { ' + os.EOL + ' ' + '.')
         .replace(/\)\ \{\ \#/g, ')' + os.EOL + ' { ' + os.EOL + ' ' + '#')
         .replace(/\)\ \{\ \:/g, ')' + os.EOL + ' { ' + os.EOL + ' ' + ':')
 
-    .replace(new RegExp('}}', 'g'), '} ' + os.EOL + ' }')
+    .replace(new RegExp('; } ; }', 'g'), '; }' + os.EOL + ' }')
 
     .replace(new RegExp(os.EOL + ' {', 'g'), os.EOL + ' {' + os.EOL)
         .replace(new RegExp(os.EOL + ' {' + os.EOL + ' ' + os.EOL + ' ', 'g'), '{' + os.EOL + ' ')
 
-
+    .replace(/\;+/g, ';')
 
     if (res) {
 
@@ -87,7 +91,6 @@ function activate(context) {
     context.subscriptions.push(commands.registerCommand('extension.cssCompact', function() {
         // The code you place here will be executed every time your command is executed
         _unitEvt();
-
     }));
 
 }

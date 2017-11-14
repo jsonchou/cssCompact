@@ -182,10 +182,9 @@ Initial release of cssCompact
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
-
 **Note:** 
 
-if you can not format your **.css/.wxss** files, may be you can exchange LF with CRLF.
+* 1、if you can not format your **.css/.wxss** files, may be you can exchange LF with CRLF.
+* 2、leave a blank before '**}**' to make your emmet effective and format your code.
 
 **Enjoy!**
