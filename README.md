@@ -2,6 +2,11 @@
 
 let's go back to original way to write our css
 
+## Download
+
+https://marketplace.visualstudio.com/items?itemName=jsonchou.css-compact&ssr=false
+
+
 ## Features
 
 * compact css file with **shift+alt+f** key
